@@ -1,3 +1,5 @@
+![image](https://github.com/Independent-Society-of-Knowledge/NuKleus/assets/76442288/2cc8283e-c6e0-4dee-a26a-9c6169307a35)
+
 # NuKleus Design System
 
 NuKleus Design System is a comprehensive set of guidelines, components, and resources that serve as the foundation for creating consistent, accessible, and user-friendly digital experiences across all products and platforms of the Independent Society of Knowledge (ISK). It is a central repository that unifies our design language, user interface elements, interaction patterns, and best practices, enabling efficient collaboration and streamlined development processes.
