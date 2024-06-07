@@ -1,0 +1,1 @@
+export type Size = "xxsmall" | "xsmall" | "small" | "regular" | "medium" | "large" | "xlarge" | "xxlarge";
