@@ -1,6 +1,7 @@
 <template>
   <button class="
     nuke-button-padding
+     nuke-color-compute
     "
           :class="{'nuke-button-normal': type === 'normal', 'nuke-button-bordered': type === 'bordered'}"
           :nuke-primary="primaryColor">
@@ -82,7 +83,6 @@ const computedBottomPadding = computed(() => {
 <style scoped>
 .nuke-button-normal{
   @apply
-  nuke-color-compute
   text-white flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans
   px-[16px]
   bg-[--primary-800]
@@ -95,7 +95,6 @@ const computedBottomPadding = computed(() => {
 }
 .nuke-button-bordered{
   @apply
-  nuke-color-compute
   text-[--primary-800] flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans
   px-[16px] border-[2px]
   border-[--primary-800]
