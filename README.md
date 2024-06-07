@@ -1,92 +1,122 @@
-# NuKleus - A Design System for Knowledge
+# NuKleus Design System
 
-Welcome to the NuKleus! This library is a crucial part of the NuKleus Design System, which provides a comprehensive set of guidelines, components, and resources. Our goal is to create consistent, accessible, and user-friendly digital experiences across all products and platforms of the Independent Society of Knowledge.
+NuKleus Design System is a comprehensive set of guidelines, components, and resources that serve as the foundation for creating consistent, accessible, and user-friendly digital experiences across all products and platforms of the Independent Society of Knowledge (ISK). It is a central repository that unifies our design language, user interface elements, interaction patterns, and best practices, enabling efficient collaboration and streamlined development processes.
 
-## About NuKleus Design System
+## Table of Contents
 
-NuKleus Design System is the foundation for designing and developing products that embody the Independent Society of Knowledge's values. It unifies our design language, user interface elements, interaction patterns, and best practices, enabling efficient collaboration and streamlined development processes.
+- [Introduction](#introduction)
+- [Key Features](#key-features)
+- [Getting Started](#getting-started)
+- [Modules](#modules)
+    - [Vue Module](#vue-module)
+    - [React Module](#react-module)
+    - [Other Modules](#other-modules)
+- [Contributing](#contributing)
+- [Support](#support)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-### Key Objectives
+## Introduction
 
-1. **Consistency and Brand Recognition**
-   - Establish a cohesive and seamless user experience across all products.
-   - Enhance brand recognition through a consistent visual language and interactions.
+The primary purpose of NuKleus Design System is to establish a cohesive and seamless user experience across our diverse range of scientific research and product offerings. By adhering to a standardized design system, we aim to:
 
-2. **Usability and Accessibility**
-   - Ensure that our products are intuitive and inclusive for users with varying abilities and preferences.
+- Enhance brand recognition and reinforce our organization's identity through consistent visual language and interactions.
+- Improve usability and accessibility, ensuring that our products are intuitive and inclusive for users with varying abilities and preferences.
+- Foster efficiency and collaboration among design and development teams by providing a shared set of reusable components and guidelines.
+- Promote scalability and flexibility, enabling rapid adaptation to emerging technologies, platforms, and user needs.
+- Uphold the Independent Society of Knowledge's values of scientific rigor, knowledge dissemination, and technological advancement through evidence-based design decisions and user-centric approaches.
 
-3. **Efficiency and Collaboration**
-   - Foster efficiency and collaboration among design and development teams with a shared set of reusable components and guidelines.
+NuKleus Design System is built upon the foundation of IBM's industry-leading Carbon Design System, inheriting its core principles and best practices. However, we have tailored and extended these guidelines to align with the specific needs and values of the Independent Society of Knowledge.
 
-4. **Scalability and Flexibility**
-   - Promote scalability and flexibility, enabling rapid adaptation to emerging technologies, platforms, and user needs.
+## Key Features
 
-5. **Scientific Rigor and User-Centric Design**
-   - Uphold the Independent Society of Knowledge's values through evidence-based design decisions and user-centric approaches.
+- **Consistent Design Language**: Unified guidelines and visual styles for all ISK products.
+- **Accessibility**: Components and patterns designed to be inclusive for all users.
+- **Reusable Components**: A shared library of components for efficient development.
+- **Scalability**: Flexible system adaptable to various platforms and emerging technologies.
+- **Collaboration**: Streamlined processes for design and development teams.
 
-## Foundations
+## Getting Started
 
-NuKleus Design System is built upon the foundation of IBM's industry-leading Carbon Design System. We inherit Carbon's core principles and best practices while tailoring and extending these guidelines to align with our specific needs and values.
+To get started with NuKleus Design System, follow these steps:
 
-### Enhancements and Customizations
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/ISK-Portal/NuKleus.git
+    ```
 
-- **Scientific Focus**
-  - Customizations reflect our organization's focus on scientific research.
-  
-- **Accessibility**
-  - Enhanced guidelines to ensure inclusivity and accessibility for all users.
+2. **Install Dependencies**:
+    ```sh
+    cd NuKleus
+    npm install
+    ```
 
-- **User-Centered Design**
-  - User-centric approaches tailored to our unique context and requirements.
+3. **Run the Development Server**:
+    ```sh
+    npm start
+    ```
 
-## Installation
+4. **Explore the Documentation**:
+   Visit [NuKleus Documentation](https://iskportal.com/nukleus-docs) for detailed guidelines and usage instructions.
 
-To install the NuKleus Component Library in your Vue project, you can use npm or yarn:
+## Modules
 
-```bash
-npm install nukelus-component-library
-```
+NuKleus Design System repository contains multiple modules to cater to different frameworks and platforms:
 
-or
+### Vue Module
 
-```bash
-yarn add nukelus-component-library
-```
+The Vue module provides a comprehensive set of Vue components adhering to NuKleus guidelines.
 
-## Usage
+- **Installation**:
+    ```sh
+    npm install @nukleus/vue
+    ```
 
-Import and use NuKleus components in your Vue application:
+- **Usage**:
+    ```js
+    import { Button } from '@nukleus/vue';
+    ```
 
-```vue
-<template>
-  <div>
-    <NuButton>Click Me</NuButton>
-  </div>
-</template>
+### React Module
 
-<script>
-import { NuButton } from 'nukelus-component-library';
+The React module offers a complete library of React components designed according to NuKleus principles.
 
-export default {
-  components: {
-    NuButton,
-  },
-};
-</script>
-```
+- **Installation**:
+    ```sh
+    npm install @nukleus/react
+    ```
 
-## Documentation
+- **Usage**:
+    ```js
+    import { Button } from '@nukleus/react';
+    ```
 
-Comprehensive documentation, including detailed usage examples and component API, is available on our [official documentation site](iskportal.com/project/NuKleus).
+### Other Modules
 
-## Contribution
+Additional modules for other frameworks and platforms will be provided to ensure comprehensive support and integration.
 
-We welcome contributions to the NuKleus Component Library! If you'd like to contribute, please read our [contributing guidelines](#).
+## Contributing
+
+We welcome contributions to NuKleus Design System! To get started:
+
+- **Read our Contribution Guidelines**: [Contribution Guidelines](https://iskportal.com/collab)
+- **Submit Issues and Pull Requests**: Contributions should be submitted through GitHub.
+- **Contact Us**: For major changes or ideas, email us at [projects@iskportal.com](mailto:projects@iskportal.com).
+
+## Support
+
+For support and inquiries, please contact us at [contact@iskportal.com](mailto:contact@iskportal.com).
 
 ## License
 
-This project is licensed under the GPLv2.0 License. See the [LICENSE](./LICENSE) file for more details.
+NuKleus Design System is licensed under the GPLv2.0 License. See the [LICENSE](LICENSE) file for more details.
 
-## Contact
+## Acknowledgements
 
-For questions or support, please reach out to our team at [projects@iskportal.com](mailto:projects@iskportal.com).
+NuKleus Design System is built upon IBM's Carbon Design System. We extend our gratitude to the Carbon Design System team for their extensive research and development efforts.
+
+---
+
+**ISK Website**: [iskportal.com](https://iskportal.com)
+
+**NuKleus Documentation**: [NuKleus Documentation](https://iskportal.com/nukleus-docs)
