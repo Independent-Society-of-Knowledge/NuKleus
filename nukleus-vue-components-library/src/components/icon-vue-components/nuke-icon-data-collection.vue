@@ -1,0 +1,34 @@
+<template>
+  <svg fill="none" height="32"  viewBox="0 0 32 32"
+       width="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <clipPath id="master_svg0_134_12501">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_12501)">
+      <g>
+        <ellipse cx="16" cy="16" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <path d="M30,17L30,15L23.83,15L26.41,12.41L25,11L20,16L25,21L26.41,19.59L23.83,17L30,17Z" fill="currentColor"
+              fill-opacity="1"/>
+      </g>
+      <g>
+        <path d="M15,23.83L15,30L17,30L17,23.83L19.59,26.41L21,25L16,20L11,25L12.41,26.41L15,23.83Z" fill="currentColor"
+              fill-opacity="1"/>
+      </g>
+      <g>
+        <path d="M7,11L5.59,12.41L8.17,15L2,15L2,17L8.17,17L5.59,19.59L7,21L12,16L7,11Z" fill="currentColor"
+              fill-opacity="1"/>
+      </g>
+      <g>
+        <path d="M17,8.17L17,2L15,2L15,8.17L12.41,5.59L11,7L16,12L21,7L19.59,5.59L17,8.17Z" fill="currentColor"
+              fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

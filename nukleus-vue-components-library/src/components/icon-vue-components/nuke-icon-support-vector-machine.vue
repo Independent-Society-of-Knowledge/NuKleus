@@ -1,0 +1,35 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_21482">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_21482)">
+      <g>
+        <ellipse cx="26" cy="18" fill="currentColor" fill-opacity="1" rx="4" ry="4"/>
+      </g>
+      <g>
+        <ellipse cx="18" cy="26" fill="currentColor" fill-opacity="1" rx="4" ry="4"/>
+      </g>
+      <g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,-19.62752058197991,9.786848043364145)">
+        <rect fill="currentColor" fill-opacity="1" height="1.9997999668121338" rx="0" width="37.598201751708984"
+              x="2.000009775161743" y="28.5859375"/>
+      </g>
+      <g>
+        <path
+            d="M14,10C11.7944,10,10,8.2056,10,6C10,3.7944,11.7944,2,14,2C16.2056,2,18,3.7944,18,6C18,8.2056,16.2056,10,14,10ZM14,4C12.8972,4,12,4.8972,12,6C12,7.1028,12.8972,8,14,8C15.1028,8,16,7.1028,16,6C16,4.8972,15.1028,4,14,4Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M6,18C3.7944,18,2,16.2056,2,14C2,11.7944,3.7944,10,6,10C8.2056,10,10,11.7944,10,14C10,16.2056,8.2056,18,6,18ZM6,12C4.8972,12,4,12.8972,4,14C4,15.1028,4.8972,16,6,16C7.1028,16,8,15.1028,8,14C8,12.8972,7.1028,12,6,12Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

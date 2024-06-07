@@ -1,0 +1,49 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_25156">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_25156)">
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="15" y="6"/>
+      </g>
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="24" y="15"/>
+      </g>
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="15" y="24"/>
+      </g>
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="6" y="15"/>
+      </g>
+      <g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,-4.384937437163899,8.585699067363748)">
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="8.17138671875" y="9.5859375"/>
+      </g>
+      <g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,-0.627523445058614,17.656898356508464)">
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="21" y="9.5859375"/>
+      </g>
+      <g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,-9.698377467226237,21.41416933434084)">
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="21" y="22.4140625"/>
+      </g>
+      <g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,-13.455791459331522,12.342970045196125)">
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="8.17138671875" y="22.4140625"/>
+      </g>
+      <g>
+        <path
+            d="M16,22C19.31371,22,22,19.31371,22,16C22,12.68629,19.31371,10,16,10C12.68629,10,10,12.68629,10,16C10,19.31371,12.68629,22,16,22ZM16,12L16,20C13.79086,20,12,18.209139999999998,12,16C12,13.79086,13.79086,12,16,12Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M28,30L4,30C2.895911,29.9988,2.00115824,29.1041,2,28L2,4C2.00115776,2.8959099999999998,2.895911,2.00115776,4,2L28,2C29.1041,2.00115848,29.9988,2.895911,30,4L30,28C29.9988,29.1041,29.1041,29.9988,28,30ZM4,4L4,28L28,28L28,4L4,4Z"
+            fill="#272425" fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

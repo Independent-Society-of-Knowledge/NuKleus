@@ -1,0 +1,36 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_12613">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_12613)">
+      <g>
+        <path
+            d="M5,25L5,15.8281L1.4141,19.4141L0,18L6,12L12,18L10.5859,19.4141L7,15.8281L7,25L19,25L19,27L7,27C5.89598,26.9987,5.00132,26.104,5,25Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M24,22L28,22C29.10411,22.00110054,29.9989,22.895887,30,24L30,28C29.9989,29.10411,29.10411,29.9989,28,30L24,30C22.895887,29.9989,22.00110054,29.10411,22,28L22,24C22.00110054,22.895887,22.895887,22.00110054,24,22ZM28,28L28,24L23.9985,24L24,28L28,28Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M27,6L27,15.1719L30.5859,11.585899999999999L32,13L26,19L20,13L21.414099999999998,11.585899999999999L25,15.1719L25,6L13,6L13,4L25,4C26.104,4.00132322,26.9987,4.895979,27,6Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="6" x="2" y="6"/>
+      </g>
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="8" x="2" y="2"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

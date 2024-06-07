@@ -1,0 +1,47 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_18102">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_18102)">
+      <g>
+        <path
+            d="M16,24C11.58172,24,8,20.418300000000002,8,16C8,11.58172,11.58172,8,16,8C20.418300000000002,8,24,11.58172,24,16C23.9949,20.4162,20.4162,23.9949,16,24ZM16,10C12.68629,10,10,12.68629,10,16C10,19.3137,12.68629,22,16,22C19.3137,22,22,19.3137,22,16C21.996299999999998,12.68782,19.3122,10.00369,16,10Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <ellipse cx="16" cy="16" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="16" cy="4" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="16" cy="28" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="28" cy="16" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="4" cy="16" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="7.514699935913086" cy="7.514699935913086" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="24.485300064086914" cy="24.485300064086914" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="24.485300064086914" cy="7.514699935913086" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g>
+        <ellipse cx="7.514699935913086" cy="24.485300064086914" fill="currentColor" fill-opacity="1" rx="2" ry="2"/>
+      </g>
+      <g transform="matrix(-1,-1.2246468525851679e-16,1.2246468525851679e-16,-1,64,64)"></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

@@ -1,0 +1,34 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_15219">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_15219)">
+      <g>
+        <path
+            d="M24,30L21.9,29C20.2,28.2,19,26.4,19,24.5L19,18L29,18L29,24.5C29,26.4,27.9,28.2,26.1,29L24,30ZM21,20L21,24.5C21,25.7,21.7,26.7,22.7,27.2L24,27.8L25.3,27.2C26.3,26.7,27,25.6,27,24.5L27,20L21,20Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <ellipse cx="10" cy="23" fill="currentColor" fill-opacity="1" rx="1" ry="1"/>
+      </g>
+      <g>
+        <ellipse cx="10" cy="15" fill="currentColor" fill-opacity="1" rx="1" ry="1"/>
+      </g>
+      <g>
+        <ellipse cx="10" cy="7" fill="currentColor" fill-opacity="1" rx="1" ry="1"/>
+      </g>
+      <g>
+        <path
+            d="M23,2L7,2C5.9,2,5,2.9,5,4L5,26C5,27.1,5.9,28,7,28L16,28L16,26L7,26L7,20L16,20L16,18L7,18L7,12L23,12L23,15L25,15L25,4C25,2.9,24.1,2,23,2ZM7,10L7,4L23,4L23,10L7,10Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

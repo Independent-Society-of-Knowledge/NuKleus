@@ -1,0 +1,20 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_12032">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_12032)">
+      <g>
+        <path
+            d="M31.9,15.5L26.2,5.5C25.9,5.2,25.6,5,25.3,5L6.7,5C6.4,5,6.1,5.2,5.9,5.5L0.2,15.5C0,15.7,0,15.8,0,16C0,16.2,0,16.3,0.1,16.5L5.8,26.5C6.1,26.8,6.4,27,6.7,27L25.2,27C25.6,27,25.9,26.8,26.1,26.5L31.8,16.5C32,16.3,32,16.2,32,16C32,15.8,32,15.7,31.9,15.5ZM17.8,15L9.8,15L13.8,8L17.8,15ZM15.5,7L23.5,7L19.5,14L15.5,7ZM17.8,17L13.8,24L9.8,17L17.8,17ZM19.5,18L23.5,25L15.5,25L19.5,18ZM21.2,17L29.2,17L25.2,24L21.2,17ZM21.2,15L25.2,8L29.2,15L21.2,15ZM7.3,7L12,7L7.4,15L2.7,15L7.3,7ZM7.3,25L2.7,17L7.4,17L12,25L7.3,25Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

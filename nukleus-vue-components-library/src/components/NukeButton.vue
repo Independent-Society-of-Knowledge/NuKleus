@@ -7,7 +7,7 @@
     <div class="min-w-0">
       <slot name="default"/>
     </div>
-    <div class="h-[16px] w-[16px] ">
+    <div class="h-[18px] w-[18px] ">
       <slot name="icon"/>
     </div>
 

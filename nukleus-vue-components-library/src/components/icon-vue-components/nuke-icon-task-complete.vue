@@ -1,0 +1,25 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_21687">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_21687)">
+      <g>
+        <path
+            d="M22,27.18000015258789L19.41,24.59000015258789L18,26.00000015258789L22,30.00000015258789L30,22.00000015258789L28.59,20.59000015258789L22,27.18000015258789Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M25,5L22,5L22,4C21.9968,2.896752,21.1032,2.00318575,20,2L12,2C10.89675,2.00318527,10.00319,2.896752,10,4L10,5L7,5C5.896753,5.00319,5.00318575,5.89675,5,7L5,28C5.00318575,29.1032,5.896753,29.9968,7,30L16,30L16,28L7,28L7,7L10,7L10,10L22,10L22,7L25,7L25,18L27,18L27,7C26.9968,5.89675,26.1032,5.00319,25,5ZM20,8L12,8L12,4L20,4L20,8Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

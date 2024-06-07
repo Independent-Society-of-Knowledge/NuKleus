@@ -1,0 +1,31 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_23680">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_23680)">
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="2" x="14" y="17"/>
+      </g>
+      <g>
+        <rect fill="currentColor" fill-opacity="1" height="2" rx="0" width="4" x="14" y="13"/>
+      </g>
+      <g>
+        <path
+            d="M21,23L11,23C10.4478,23,10,22.5522,10,22L10,10C10,9.4478,10.4478,9,11,9L21,9C21.5522,9,22,9.4478,22,10L22,22C22,22.5522,21.5522,23,21,23ZM12,21L20,21L20,11L12,11L12,21Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M16,1C15.8259,1,15.6519,1.0454,15.4961,1.1362L3.4961,8.136199999999999C3.189,8.3154,3,8.644300000000001,3,9L3,23C3,23.3557,3.189,23.6846,3.4961,23.8638L15.4961,30.8638C15.6519,30.9546,15.8259,31,16,31C16.1741,31,16.348100000000002,30.9546,16.5039,30.8638L27.5039,24.4472L26.4961,22.7197L16,28.8424L5,22.4258L5,9.5745L16,3.1577L27,9.5743L27,17L29,17L29,9C29,8.644300000000001,28.811,8.3154,28.5039,8.136199999999999L16.5039,1.1362C16.348100000000002,1.0453999,16.1741,0.9999999403954,16,1Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>

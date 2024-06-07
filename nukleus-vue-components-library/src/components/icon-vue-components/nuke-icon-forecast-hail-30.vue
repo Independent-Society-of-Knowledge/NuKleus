@@ -1,0 +1,47 @@
+<template>
+  <svg fill="none" height="32"
+       viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="master_svg0_134_14422">
+        <rect height="32" rx="0" width="32" x="0" y="0"/>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#master_svg0_134_14422)">
+      <g transform="matrix(0.7071067690849304,-0.7071067690849304,0.7071067690849304,0.7071067690849304,-8.384882830549031,10.928976512979716)">
+        <rect fill="currentColor" fill-opacity="1" height="1.999400019645691" rx="0" width="5.071599960327148" x="9"
+              y="15.5859375"/>
+      </g>
+      <g transform="matrix(0.7071672677993774,-0.7070463299751282,0.7070463299751282,0.7071672677993774,-6.627378981159211,15.1701265332116)">
+        <rect fill="currentColor" fill-opacity="1" height="1.999400019645691" rx="0" width="2.2432000637054443"
+              x="15.00048828125" y="15.585984230041504"/>
+      </g>
+      <g>
+        <ellipse cx="10.5" cy="22.5" fill="currentColor" fill-opacity="1" rx="1.5" ry="1.5"/>
+      </g>
+      <g>
+        <ellipse cx="7.5" cy="18.5" fill="currentColor" fill-opacity="1" rx="1.5" ry="1.5"/>
+      </g>
+      <g>
+        <ellipse cx="13.5" cy="18.5" fill="currentColor" fill-opacity="1" rx="1.5" ry="1.5"/>
+      </g>
+      <g>
+        <path
+            d="M14,28C8.47715,28,4,23.5228,4,18C4,12.4772,8.47715,8,14,8L18,8L18,13L24,7L18,1L18,6L14,6C7.37258,6,2,11.3726,2,18C2,24.6274,7.37258,30,14,30L14,28Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M20,20L16,20L16,22L20,22L20,24L17,24L17,26L20,26L20,28L16,28L16,30L20,30C21.10395,29.99851,21.99851,29.103949999999998,22,28L22,22C21.998730000000002,20.895955999999998,21.10404,20.00126839,20,20Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g>
+        <path
+            d="M28,30L26,30C24.895912,29.99884,24.00115967,29.10409,24,28L24,22C24.00115776,20.89591,24.89591,20.00115776,26,20L28,20C29.10409,20.00115776,29.99884,20.89591,30,22L30,28C29.99884,29.10409,29.10409,29.99884,28,30ZM26,22L26,28L28,28L28,22L26,22Z"
+            fill="currentColor" fill-opacity="1"/>
+      </g>
+      <g></g>
+    </g>
+  </svg>
+</template>
+<script lang="ts" setup></script>
+<style lang="scss" scoped></style>
