@@ -28,7 +28,7 @@ const props = withDefaults(
     {
       primaryColor: "azure",
       size: "regular",
-      type: "bordered"
+      type: "normal"
     }
 )
 
