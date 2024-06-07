@@ -1,0 +1,30 @@
+// Colors and Variants as Variables
+$colors: "shore", "azure", "ocean", "danger", "info", "success", "warning", "gray";
+$color-variants: "100", "200", "300", "400", "500", "600", "700", "800", "900", "1000";
+
+
+
+/*
+  nuke-color-compute is class that can be used in tailwindcss and css to order a color and its
+  variants for an object in components.
+ */
+.nuke-color-compute {
+  @each $color in $colors {
+    @each $variant in $color-variants {
+      &[nuke-primary=#{$color}] {
+        --primary-#{$variant}: var(--#{$color}-#{$variant});
+      }
+
+      &[nuke-secondary=#{$color}] {
+        --secondary-#{$variant}: var(--#{$color}-#{$variant});
+      }
+
+      &[nuke-tertiary=#{$color}] {
+        --tertiary-#{$variant}: var(--#{$color}-#{$variant});
+      }
+
+    }
+  }
+}
+
+

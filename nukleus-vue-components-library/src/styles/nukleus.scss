@@ -1,0 +1,17 @@
+@layer utilities {
+  @import "nukleus-color-variations";
+  @import "nukleus-static-classes";
+  // Size and Variants as Variables
+  $spaces: "--4", "--8", "--16", "--24", "--32", "--64", "--128", "--512" ;
+  .space-compute {
+    @each $space in $spaces {
+      &[nuk-space=#{$space}] {
+        --space: var(--#{$space});
+      }
+    }
+  }
+
+
+
+
+}
