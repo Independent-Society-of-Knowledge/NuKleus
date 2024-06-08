@@ -1,4 +1,4 @@
-![image](https://github.com/Independent-Society-of-Knowledge/NuKleus/assets/76442288/2cc8283e-c6e0-4dee-a26a-9c6169307a35)
+![image](https://github.com/Independent-Society-of-Knowledge/NuKleus/assets/76442288/7af39157-45d9-4461-8445-2beae5e905d1)
 
 # NuKleus Design System
 
