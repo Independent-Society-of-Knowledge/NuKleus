@@ -1,0 +1,18 @@
+$spaces: "tiny", "smaller", "small", "regular", "medium", "semilarge", "large", "larger", "giant";
+$edges : "top" , "bottom", "left" , "right";
+
+.nuke-space-compute {
+  @each $space in $spaces {
+    @each $edge in $edges {
+      &[nuke-space-primary-#{$edge}=#{$space}]{
+        --nuke-space-primary-#{$edge}: var(--space-#{$space});
+      }
+      &[nuke-space-secondary#{$edge}=#{$space}]{
+        --nuke-space-secondary-#{$edge}: var(--space-#{$space});
+      }
+      &[nuke-space-teritary#{$edge}=#{$space}]{
+        --nuke-space-teritatry-#{$edge}: var(--space-#{$space});
+      }
+    }
+  }
+}

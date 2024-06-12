@@ -7,8 +7,10 @@
   hover:bg-[--secondary-300]  hover:text-[--secondary-400]
   dark:bg-[--secondary-800] dark:text-[--secondary-800]
   dark:hover:bg-[--secondary-900] dark:hover:text-[--secondary-800]
+
   "
-       :nuke-secondary="secondaryColor"
+       :nuke-color-secondary="secondaryColor"
+       :nuke-space-primary="size"
        @mouseenter="percentageOnHover = true"
        @mouseleave="percentageOnHover = false"
   >
@@ -22,7 +24,7 @@
     dark:bg-[--primary-700] dark:
     dark:group-hover:bg-[--primary-600] dark:transition-colors
 
-" :nuke-primary="primaryColorValueHolder"></div>
+" :nuke-color-primary="primaryColorValueHolder"></div>
 
     <div class="
     percentage-text
@@ -51,13 +53,13 @@ import {
   isDanger,
   isNotDone
 } from "../composables/useActionState.ts";
-import {Size} from "../composables/useSize.ts";
+import {Space} from "../composables/useSize.ts";
 
 
 // Props
 const props = withDefaults(
     defineProps<{
-      size: Size;
+      size: Space;
       expectedValue: number,
       progressValue: number,
       primaryColor: Color,

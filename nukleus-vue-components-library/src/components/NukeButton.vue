@@ -1,10 +1,22 @@
 <template>
   <button class="
-    nuke-button-padding
-     nuke-color-compute
+
+    nuke-color-compute
+    nuke-space-compute
+    pt-[--nuke-space-primary-top]
+    pb-[--nuke-space-primary-bottom]
+    pl-[--nuke-space-primary-left]
+    pr-[--nuke-space-primary-right]
     "
           :class="{'nuke-button-normal': type === 'normal', 'nuke-button-bordered': type === 'bordered'}"
-          :nuke-primary="primaryColor">
+          :nuke-color-primary="primaryColor"
+
+          :nuke-space-primary-top="computedButtonSizes.top"
+          :nuke-space-primary-bottom="computedButtonSizes.bottom"
+          :nuke-space-primary-right="computedButtonSizes.right"
+          :nuke-space-primary-left="computedButtonSizes.left"
+
+  >
     <div class="min-w-0">
       <slot name="default"/>
     </div>
@@ -16,66 +28,41 @@
 </template>
 <script setup lang="ts">
 import {Color} from "../composables/useColor.ts";
+import {Place, Space} from "../composables/useSize.ts";
 import {computed} from "vue";
-import {Size} from "../composables/useSize.ts";
 
 const props = withDefaults(
     defineProps<{
       primaryColor: Color
-      size: Size
+      size: Space
       type: "normal" | "bordered"
 
     }>(),
     {
-      primaryColor: "azure",
+      primaryColor: "gray",
       size: "regular",
       type: "normal"
     }
 )
 
-const computedTopPadding = computed(() => {
-  switch (props.size) {
-    case "xxsmall":
-      return "2px";
-    case "xsmall":
-      return "4px";
-    case "small":
-      return "8px";
-    case "regular":
-      return "16px";
-    case "medium":
-      return "16px";
-    case "large":
-      return "16px";
-    case "xlarge":
-      return "16px";
-    case "xxlarge":
-      return "16px"
+const computedButtonSizes : Place = computed(()=> {
+  if (props.size != "large" || props.size != "larger" || props.size != "giant")  {
+    return {
+      top: props.size,
+      bottom: props.size,
+      left: props.size,
+      right: props.size,
+    }
+  }
+  else {
+    return {
+      top: "regular",
+      left: "regular",
+      right: "regular",
+      bottom: props.size
+    }
   }
 })
-
-const computedBottomPadding = computed(() => {
-  switch (props.size) {
-    case "xxsmall":
-      return "2px";
-    case "xsmall":
-      return "4px";
-    case "small":
-      return "8px";
-    case "regular":
-      return "16px";
-    case "medium":
-      return "24px";
-    case "large":
-      return "32px";
-    case "xlarge":
-      return "64px";
-    case "xxlarge":
-      return "80px"
-
-  }
-})
-
 
 </script>
 
@@ -84,29 +71,25 @@ const computedBottomPadding = computed(() => {
 .nuke-button-normal{
   @apply
   text-white flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans
-  px-[16px]
-  bg-[--primary-800]
-  hover:bg-[--primary-700]
-  active:bg-[--primary-800]
+  bg-[--nuke-color-primary-800]
+  hover:bg-[--nuke-color-primary-700]
+  active:bg-[--nuke-color-primary-800]
 
-  dark:bg-[--primary-700]
-  dark:hover:bg-[--primary-600]
-  dark:active:bg-[--primary-700];
+  dark:bg-[--nuke-color-primary-700]
+  dark:hover:bg-[--nuke-color-primary-600]
+  dark:active:bg-[--nuke-color-primary-700];
 }
 .nuke-button-bordered{
   @apply
-  text-[--primary-800] flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans
+  text-[--nuke-color-primary-800] flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans
   px-[16px] border-[2px]
-  border-[--primary-800]
-  hover:border-[--primary-700] hover:text-[--primary-700]
-  active:border-[--primary-800] active:text-[--primary-800]
+  border-[--nuke-color-primary-800]
+  hover:border-[--nuke-color-primary-700] hover:text-[--nuke-color-primary-700]
+  active:border-[--nuke-color-primary-800] active:text-[--nuke-color-primary-800]
 
-  dark:border-[--primary-400] dark:text-[--primary-400]
-  dark:hover:border-[--primary-300] dark:hover:text-[--primary-300]
-  dark:active:border-[--primary-400] dark:active:text-[--primary-400];
+  dark:border-[--nuke-color-primary-400] dark:text-[--nuke-color-primary-400]
+  dark:hover:border-[--nuke-color-primary-300] dark:hover:text-[--nuke-color-primary-300]
+  dark:active:border-[--nuke-color-primary-400] dark:active:text-[--nuke-color-primary-400];
 }
-.nuke-button-padding{
-  padding-top: v-bind(computedTopPadding);
-  padding-bottom: v-bind(computedBottomPadding);
-}
+
 </style>

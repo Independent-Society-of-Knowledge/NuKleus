@@ -11,16 +11,16 @@ $color-variants: "100", "200", "300", "400", "500", "600", "700", "800", "900", 
 .nuke-color-compute {
   @each $color in $colors {
     @each $variant in $color-variants {
-      &[nuke-primary=#{$color}] {
-        --primary-#{$variant}: var(--#{$color}-#{$variant});
+      &[nuke-color-primary=#{$color}] {
+        --nuke-color-primary-#{$variant}: var(--#{$color}-#{$variant});
       }
 
-      &[nuke-secondary=#{$color}] {
-        --secondary-#{$variant}: var(--#{$color}-#{$variant});
+      &[nuke-color-secondary=#{$color}] {
+        --nuke-color-secondary-#{$variant}: var(--#{$color}-#{$variant});
       }
 
-      &[nuke-tertiary=#{$color}] {
-        --tertiary-#{$variant}: var(--#{$color}-#{$variant});
+      &[nuke-color-teritary=#{$color}] {
+        --nuke-color-tertiary-#{$variant}: var(--#{$color}-#{$variant});
       }
 
     }
