@@ -1,20 +1,43 @@
+<!--
+* Nukleus: A design system for knowledge (vue-components-library)
+*
+* Copyright © 2024 Independent Society of Knowledge
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program. If not, see <https://www.gnu.org/licenses/>.
+*
+* Contact Information:
+* Independent Society of Knowledge
+* Email: projects@iskportal.com
+*
+* SPDX-License-Identifier: GPL-2.0-or-later
+!-->
+
 <template>
   <button class="
-
     nuke-color-compute
     nuke-space-compute
-    pt-[--nuke-space-primary-top]
-    pb-[--nuke-space-primary-bottom]
-    pl-[--nuke-space-primary-left]
-    pr-[--nuke-space-primary-right]
+    px-[--nuke-space-primary]
+    pt-[--nuke-space-primary]
+    pb-[--nuke-space-secondary]
+
     "
           :class="{'nuke-button-normal': type === 'normal', 'nuke-button-bordered': type === 'bordered'}"
           :nuke-color-primary="primaryColor"
 
-          :nuke-space-primary-top="computedButtonSizes.top"
-          :nuke-space-primary-bottom="computedButtonSizes.bottom"
-          :nuke-space-primary-right="computedButtonSizes.right"
-          :nuke-space-primary-left="computedButtonSizes.left"
+          :nuke-space-primary="computedButtonSizes.primary"
+          :nuke-space-secondary="computedButtonSizes.secondary"
+
 
   >
     <div class="min-w-0">
@@ -28,7 +51,7 @@
 </template>
 <script setup lang="ts">
 import {Color} from "../composables/useColor.ts";
-import {Place, Space} from "../composables/useSize.ts";
+import {Space} from "../composables/useSize.ts";
 import {computed} from "vue";
 
 const props = withDefaults(
@@ -45,21 +68,17 @@ const props = withDefaults(
     }
 )
 
-const computedButtonSizes : Place = computed(()=> {
-  if (props.size != "large" || props.size != "larger" || props.size != "giant")  {
+const computedButtonSizes = computed(()=> {
+  if (props.size != "large" || props.size != "large" || props.size != "large")  {
     return {
-      top: props.size,
-      bottom: props.size,
-      left: props.size,
-      right: props.size,
+      primary: props.size,
+      secondary: props.size
     }
   }
   else {
     return {
-      top: "regular",
-      left: "regular",
-      right: "regular",
-      bottom: props.size
+      primary: "regular",
+      secondary: props.size
     }
   }
 })
@@ -70,11 +89,10 @@ const computedButtonSizes : Place = computed(()=> {
 <style scoped>
 .nuke-button-normal{
   @apply
-  text-white flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans
+  text-white flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans text-nowrap
   bg-[--nuke-color-primary-800]
   hover:bg-[--nuke-color-primary-700]
   active:bg-[--nuke-color-primary-800]
-
   dark:bg-[--nuke-color-primary-700]
   dark:hover:bg-[--nuke-color-primary-600]
   dark:active:bg-[--nuke-color-primary-700];

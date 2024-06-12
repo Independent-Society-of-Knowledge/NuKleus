@@ -1,12 +1,12 @@
 <template>
   <div class="
   progress-bar
-  group
-  nuke-transition-colors
-  nuke-color-compute  bg-[--secondary-200] w-full font-plex-mono text-[11pt] text-[--secondary-400]
-  hover:bg-[--secondary-300]  hover:text-[--secondary-400]
-  dark:bg-[--secondary-800] dark:text-[--secondary-800]
-  dark:hover:bg-[--secondary-900] dark:hover:text-[--secondary-800]
+  group h-[--nuke-space-primary]
+  nuke-transition-colors nuke-space-compute
+  nuke-color-compute  bg-[--nuke-color-secondary-200] w-full font-plex-mono text-[11pt] text-[--nuke-color-secondary-400]
+  hover:bg-[--nuke-color-secondary-300]  hover:text-[--nuke-color-secondary-400]
+  dark:bg-[--nuke-color-secondary-800] dark:text-[--nuke-color-secondary-800]
+  dark:hover:bg-[--nuke-color-secondary-900] dark:hover:text-[--nuke-color-secondary-800]
 
   "
        :nuke-color-secondary="secondaryColor"
@@ -19,10 +19,10 @@
     <div class="
     completion-bar
     nuke-color-compute
-    bg-[--primary-700] h-full
-    group-hover:bg-[--primary-600]
-    dark:bg-[--primary-700] dark:
-    dark:group-hover:bg-[--primary-600] dark:transition-colors
+    bg-[--nuke-color-primary-700] h-full
+    group-hover:bg-[--nuke-color-primary-600]
+    dark:bg-[--nuke-color-primary-700] dark:
+    dark:group-hover:bg-[--nuke-color-  primary-600] dark:transition-colors
 
 " :nuke-color-primary="primaryColorValueHolder"></div>
 
@@ -69,7 +69,7 @@ const props = withDefaults(
       showPercentageOnHover: boolean
 
     }>(), {
-      size: "small",
+      size: "regular",
       expectedValue: 100,
       primaryColor: "azure",
       secondaryColor: "gray",
@@ -95,27 +95,7 @@ const primaryColorValueHolder = computed(() => {
 })
 
 const percentageOnHover = ref<boolean>(false)
-// Computed Variables
-const computedHeight = computed(() => {
-  switch (props.size) {
-    case "xxsmall":
-      return "1px";
-    case "xsmall":
-      return "2px";
-    case "small":
-      return "4px";
-    case "regular":
-      return "8px";
-    case "medium":
-      return "16px";
-    case "large":
-      return "32px";
-    case "xlarge":
-      return "64px";
-    case "xxlarge":
-      return "80px"
-  }
-})
+
 const computedPercentage = computed(() => {
   return `${((progressValueHolder.value / props.expectedValue) * 100).toFixed(0)}%`
 })
@@ -123,8 +103,6 @@ const computedPercentage = computed(() => {
 </script>
 <style scoped lang="scss">
 .progress-bar {
-  height: v-bind(computedHeight);
-
   .completion-bar {
     transition: width 0.3s ease-in;
     width: v-bind(computedPercentage);
