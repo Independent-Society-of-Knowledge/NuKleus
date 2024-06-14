@@ -40,6 +40,14 @@
     [&[type=normal]]:dark:hover:bg-[--nuke-color-primary-600]
     [&[type=normal]]:dark:active:bg-[--nuke-color-primary-700]
 
+    disabled:[&[type=normal]]:border-0
+    disabled:[&[type=normal]]:text-[--nuke-color-secondary-400] flex flex-row items-center  transition-all duration-200  gap-[32px] nuke-type-sans-d4-400-normal text-nowrap
+    disabled:[&[type=normal]]:bg-[--nuke-color-secondary-200]
+    disabled:[&[type=normal]]:dark:bg-[--nuke-color-secondary-200]
+
+
+
+
     [&[type=border]]:bg-transparent
     [&[type=border]]:text-[--nuke-color-primary-800]
     [&[type=border]]:border-[--nuke-border-width-2px]
@@ -50,11 +58,23 @@
     [&[type=border]]:dark:border-[--nuke-color-primary-400] [&[type=border]]:dark:text-[--nuke-color-primary-400]
     [&[type=border]]:dark:hover:border-[--nuke-color-primary-300] [&[type=border]]:dark:hover:text-[--nuke-color-primary-300]
     [&[type=border]]:dark:active:border-[--nuke-color-primary-400] [&[type=border]]:dark:active:text-[--nuke-color-primary-400]
+
+    disabled:[&[type=border]]:bg-transparent
+    disabled:[&[type=border]]:text-[--nuke-color-secondary-300]
+    disabled:[&[type=border]]:border-[--nuke-border-width-2px]
+    disabled:[&[type=border]]:border-solid
+    disabled:[&[type=border]]:border-[--nuke-color-secondary-300]
+    disabled:[&[type=border]]:dark:border-[--nuke-color-secondary-800] disabled:[&[type=border]]:dark:text-[--nuke-color-secondary-800]
+
+
+
+
     "
           :nuke-color-primary="primaryColor"
+          nuke-color-secondary="gray"
           :nuke-space-primary="computedButtonSizes.primary"
           :nuke-space-secondary="computedButtonSizes.secondary"
-          :type="type">
+          :type="type" v-bind="$attrs">
     <div class="min-w-0">
       <slot name="default"/>
     </div>
