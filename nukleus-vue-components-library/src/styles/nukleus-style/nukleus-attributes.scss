@@ -23,7 +23,7 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
-}
+
+@import "nukleus-attributes/nukleus-attribute-color";
+@import "nukleus-attributes/nukleus-attribute-space";
+@import "nukleus-attributes/nukleus-attribute-typography";

@@ -22,8 +22,13 @@
 // Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
 // Email:        ceo@iskportal.com
 // version 1.0.0
+:root{
 
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
+  --nuke-animation-duration-slow: 1.8s;
+  --nuke-animation-duration-regular: 0.6s ;
+  --nuke-animation-duration-fast: 0.12s;
+
+  --nuke-animation-state-null: 0%;
+  --nuke-animation-state-full: 100%;
+
 }

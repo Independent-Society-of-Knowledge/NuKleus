@@ -23,7 +23,40 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
+:root {
+
+  // font-sizes:
+  --nuke-type-size-h0: 512pt;
+  --nuke-type-size-h1: 256pt;
+  --nuke-type-size-h2: 128pt;
+  --nuke-type-size-h3: 64pt;
+  --nuke-type-size-h4: 48pt;
+  --nuke-type-size-h5: 32pt;
+  --nuke-type-size-h6: 24pt;
+  --nuke-type-size-d1: 18pt;
+  --nuke-type-size-d2: 16pt;
+  --nuke-type-size-d3: 14pt;
+  --nuke-type-size-d4: 12pt;
+  --nuke-type-size-d5: 10pt;
+  --nuke-type-size-d6: 9pt;
+
+  // font-names:
+  --nuke-type-model-mono: "IBM Plex Mono";
+  --nuke-type-model-sans: "IBM Plex Sans";
+  --nuke-type-model-arabic: "IBM Plex Sans Arabic";
+  --nuke-type-model-sans-condensed: "IBM Plex Sans Condensed";
+  --nuke-type-model-serif: "IBM Plex Serif";
+
+  // font-weight:
+  --nuke-type-weight-100: 100;
+  --nuke-type-weight-200: 200;
+  --nuke-type-weight-300: 300;
+  --nuke-type-weight-400: normal;
+  --nuke-type-weight-500: 500;
+  --nuke-type-weight-600: 600;
+  --nuke-type-weight-700: bold;
+
+  // font-style:
+  --nuke-type-style-italic: italic;
+  --nuke-type-style-normal: normal;
 }

@@ -1,8 +1,0 @@
-$transitionOn: "hover", "active", "focus";
-.nuke-transition-colors {
-  @apply
-  transition-colors ease-in-out
-  hover:transition-colors hover:ease-in-out
-  dark:transition-colors dark:ease-in-out
-  dark:hover:transition-colors  dark:hover:ease-in-out;
-}

@@ -23,7 +23,23 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
+
+:root {
+  /*
+  Spacing:
+  Nukleus uses 9 spacing variables to define its components,
+  nothing would be published unless it meets these spacing variables.
+
+  These spacings would be used for padding, margins and thicknesses across components.
+  */
+  --space-0px: 0px;
+  --space-2px: 2px;
+  --space-4px: 4px;
+  --space-8px: 8px;
+  --space-16px: 16px;
+  --space-24px: 24px;
+  --space-32px: 32px;
+  --space-64px: 64px;
+  --space-128px: 128px;
+  --space-512px: 512px;
 }

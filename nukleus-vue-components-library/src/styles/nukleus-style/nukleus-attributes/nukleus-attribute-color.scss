@@ -23,7 +23,24 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
+$colors: "azure", "shore", "ocean", "gray", "danger", "warning", "success", "info";
+$shades: "100", "200", "300", "400", "500", "600", "700", "800", "900", "1000";
+.nuke-color-attribute {
+  @each $color in $colors {
+    @each $shade in $shades {
+      &[nuke-color-primary=#{$color}] {
+        --nuke-color-primary-#{$shade}: var(--#{$color}-#{$shade});
+      }
+
+      &[nuke-color-secondary=#{$color}] {
+        --nuke-color-secondary-#{$shade}: var(--#{$color}-#{$shade});
+      }
+
+      &[nuke-color-teritary=#{$color}] {
+        --nuke-color-tertiary-#{$shade}: var(--#{$color}-#{$shade});
+      }
+
+    }
+  }
 }
+

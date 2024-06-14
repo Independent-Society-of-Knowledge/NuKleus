@@ -23,7 +23,26 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
+$type-sizes: "h0", "h1", "h2", "h3", "h4", "h5", "h6", "d1", "d2", "d3", "d4", "d5", "d6";
+$type-weights: "100", "200", "300", "400", "500", "600", "700";
+$type-models: "mono", "serif", "sans", "arabic", "sans-condensed";
+$type-styles: "italic", "normal";
+
+// Generating Static Classes
+@mixin nuke-typography($model, $size, $weight, $style) {
+  .nuke-type-#{$model}-#{$size}-#{$weight}-#{$style} {
+    font-family: var(--nuke-type-model-#{$model});
+    font-weight: var(--nuke-type-weight-#{$weight});
+    font-size: var(--nuke-type-size-#{$size});
+    font-style: var(--nuke-type-style-#{$style});
+  }
+}
+@each $size in $type-sizes {
+  @each $weight in $type-weights {
+    @each $model in $type-models {
+      @each $style in $type-styles {
+        @include nuke-typography($model, $size, $weight, $style);
+      }
+    }
+  }
 }

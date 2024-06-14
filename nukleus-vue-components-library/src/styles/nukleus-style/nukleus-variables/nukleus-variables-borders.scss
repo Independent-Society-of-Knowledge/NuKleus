@@ -22,8 +22,8 @@
 // Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
 // Email:        ceo@iskportal.com
 // version 1.0.0
-
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
+:root{
+  --nuke-border-width-2px: 2px;
+  --nuke-border-width-4px: 4px;
+  --nuke-border-width-8px: 8px;
 }

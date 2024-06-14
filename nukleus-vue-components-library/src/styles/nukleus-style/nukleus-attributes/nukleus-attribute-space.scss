@@ -23,7 +23,19 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-@layer utilities {
-  @import "nukleus-style/nukleus-variables";
-  @import "nukleus-style/nukleus-attributes";
+$spaces: 0px, 2px, 4px, 8px, 16px, 24px, 32px, 48px, 64px, 128px, 512px;
+
+.nuke-space-attribute {
+  @each $space in $spaces {
+    &[nuke-space-primary="#{$space}"] {
+      --nuke-space-primary: var(--space-#{$space});
+    }
+    &[nuke-space-secondary="#{$space}"] {
+      --nuke-space-secondary: var(--space-#{$space});
+    }
+    &[nuke-space-teritary="#{$space}"] {
+      --nuke-space-teritary: var(--space-#{$space});
+    }
+  }
+
 }

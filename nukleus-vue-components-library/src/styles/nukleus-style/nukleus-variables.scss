@@ -1,7 +1,6 @@
 // Nukleus: A design system for knowledge (vue-components-library)
 //
 // Copyright © 2024 Independent Society of Knowledge
-//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 2 of the License, or
@@ -20,33 +19,13 @@
 // Email: projects@iskportal.com
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
-// Colors and Variants as Variables
-$colors: "shore", "azure", "ocean", "danger", "info", "success", "warning", "gray";
-$color-variants: "100", "200", "300", "400", "500", "600", "700", "800", "900", "1000";
+// Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+// Email:        ceo@iskportal.com
+// version 1.0.0
 
-
-
-/*
-  nuke-color-compute is class that can be used in tailwindcss and css to order a color and its
-  variants for an object in components.
- */
-.nuke-color-compute {
-  @each $color in $colors {
-    @each $variant in $color-variants {
-      &[nuke-color-primary=#{$color}] {
-        --nuke-color-primary-#{$variant}: var(--#{$color}-#{$variant});
-      }
-
-      &[nuke-color-secondary=#{$color}] {
-        --nuke-color-secondary-#{$variant}: var(--#{$color}-#{$variant});
-      }
-
-      &[nuke-color-teritary=#{$color}] {
-        --nuke-color-tertiary-#{$variant}: var(--#{$color}-#{$variant});
-      }
-
-    }
-  }
-}
-
-
+@import "nukleus-variables/nukleus-variables-spacing";
+@import "nukleus-variables/nukleus-variables-color";
+@import "nukleus-variables/nukleus-variables-typography";
+@import "nukleus-variables/nukleus-variables-borders";
+@import "nukleus-variables/nukleus-variables-shadows";
+@import "nukleus-variables/nukleus-variables-animation";
