@@ -1,16 +1,19 @@
 <template>
   <div class="
-  progress-bar
-  group h-[--nuke-space-primary]
-  nuke-transition-colors nuke-space-compute
-  nuke-color-compute  bg-[--nuke-color-secondary-200] w-full font-plex-mono text-[11pt] text-[--nuke-color-secondary-400]
+
+  group
+  nuke-color-attribute nuke-space-attribute
+  bg-[--nuke-color-secondary-200] h-[--nuke-space-primary] w-full
+  nuke-type-mono-d4-300-normal text-[--nuke-color-secondary-400]
   hover:bg-[--nuke-color-secondary-300]  hover:text-[--nuke-color-secondary-400]
   dark:bg-[--nuke-color-secondary-800] dark:text-[--nuke-color-secondary-800]
   dark:hover:bg-[--nuke-color-secondary-900] dark:hover:text-[--nuke-color-secondary-800]
 
-  "
+"
        :nuke-color-secondary="secondaryColor"
        :nuke-space-primary="size"
+       :data-state="state"
+       :data-percentage="percentage"
        @mouseenter="percentageOnHover = true"
        @mouseleave="percentageOnHover = false"
   >
@@ -18,24 +21,29 @@
 
     <div class="
     completion-bar
-    nuke-color-compute
+    nuke-color-attribute
     bg-[--nuke-color-primary-700] h-full
     group-hover:bg-[--nuke-color-primary-600]
     dark:bg-[--nuke-color-primary-700] dark:
-    dark:group-hover:bg-[--nuke-color-  primary-600] dark:transition-colors
-
-" :nuke-color-primary="primaryColorValueHolder"></div>
+    dark:group-hover:bg-[--nuke-color-primary-600] dark:transition-colors
+    group-data-[percentage=100]:bg-red-400
+    "
+         :nuke-color-primary="computedPrimaryColor"
+         :style="{
+        width: props.state !== 'danger' ? `${props.progressValue < props.expectedValue ? (props.progressValue / props.expectedValue)*100 : 100}%` : '100%',
+        transition: 'width 0.2s ease-in-out'
+         }"
+    ></div>
 
     <div class="
     percentage-text
-    color-compute
+
     w-full flex justify-end
     "
          v-if="showPercentage || (showPercentageOnHover && percentageOnHover)"
     >
       {{
-        isNone(state) || isWarning(state) || isLoading(state) ? computedPercentage :
-            isDanger(state) ? "Error" : isSuccess(state) ? "100%" : computedPercentage
+        state !== "danger" && state !== "success" ? percentage : state !== "success" ? "Error" : "Done"
       }}
     </div>
 
@@ -44,24 +52,15 @@
 <script setup lang="ts">
 import {Color} from "../composables/useColor.ts";
 import {computed, ref} from "vue";
-import {
-  ActionState,
-  isLoading,
-  isNone,
-  isSuccess,
-  isWarning,
-  isDanger,
-  isNotDone
-} from "../composables/useActionState.ts";
 import {Space} from "../composables/useSize.ts";
-
+import {ActionState} from "../composables/useActionState.ts";
 
 // Props
 const props = withDefaults(
     defineProps<{
       size: Space;
-      expectedValue: number,
       progressValue: number,
+      expectedValue: number,
       primaryColor: Color,
       secondaryColor: Color
       state: ActionState
@@ -69,44 +68,27 @@ const props = withDefaults(
       showPercentageOnHover: boolean
 
     }>(), {
-      size: "regular",
-      expectedValue: 100,
+      progressValue: 50,
+      size: "4px",
       primaryColor: "azure",
+      expectedValue: 100,
       secondaryColor: "gray",
       showPercentage: false,
-      showPercentageOnHover: true
+      showPercentageOnHover: true,
+      state: "normal"
     }
 )
 
-const progressValueHolder = computed(() => {
-  if (isNotDone(props.state)) {
-    return props.progressValue
-  } else {
-    return props.expectedValue
-  }
+const percentageOnHover = ref(false)
+
+const percentage = computed(() => {
+  return props.state !== "danger" ? `${props.progressValue < props.expectedValue ? (props.progressValue / props.expectedValue) * 100 : 100}%` : "100%"
 })
 
-const primaryColorValueHolder = computed(() => {
-  if (isNone(props.state) || isLoading(props.state)) {
-    return props.primaryColor
-  } else {
-    return props.state
-  }
-})
-
-const percentageOnHover = ref<boolean>(false)
-
-const computedPercentage = computed(() => {
-  return `${((progressValueHolder.value / props.expectedValue) * 100).toFixed(0)}%`
+const computedPrimaryColor = computed(() => {
+  return props.state !== "danger" && props.state !== "success" ? props.primaryColor : props.state !== "success" ? "danger" : "success"
 })
 
 </script>
 <style scoped lang="scss">
-.progress-bar {
-  .completion-bar {
-    transition: width 0.3s ease-in;
-    width: v-bind(computedPercentage);
-  }
-}
-
 </style>
