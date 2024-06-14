@@ -1,0 +1,23 @@
+$states: "danger", "warning", "info", "success", "normal", "loading";
+
+@mixin inject-property($property, $exception-value, $exception-state, $state-pointer, $value-pointer) {
+  @if $state-pointer == $exception-state {
+    .nuke-injected-#{$property} {
+      $property: $value-pointer
+    }
+  } @else {
+    .nuke-injected-#{$property} {
+      $property: $value-pointer
+    }
+  }
+}
+
+.nuke-transition-colors{
+  @apply
+  transition-colors duration-200
+  hover:transition-colors hover:duration-200
+  dark:transition-colors  dark:duration-200
+  dark:hover:transition-colors dark:hover:duration-200
+  active:transition-colors active:duration-200
+  dark:active:transition-colors dark:active:duration-200;
+}
