@@ -1,4 +1,3 @@
-
 <!--
   - Nukleus: A design system for knowledge (vue-components-library)
   -
@@ -27,31 +26,49 @@
   - version 1.0.0
   -
   -->
-
 <template>
-  <div :class="{ dark: darkModeValue }" class="h-screen  dark:bg-black transition-colors duration-200 flex flex-col items-center justify-center dark:text-white bg-white">
-    <nuke-checkbox primary-color="azure" v-model="darkModeValue" :disabled="false"/>
-    <nuke-text-input :value="inputmodel" @update:value="(newvalue)=>{
-      inputmodel.value = newvalue
-    }"/>
-
-    {{inputmodel}}
-  </div>
-
-
+<div class="input-container bg-red-400"
+  :nuke-color-primary="primaryColor"
+  :nuke-color-secondary="secondaryColor"
+  :nuke-space-primary="size"
+>
+<input :type="type" :placeholder="placeHolder" v-bind="value"/>
+</div>
 </template>
-
 <script setup lang="ts">
 
-import {ref} from "vue";
-import NukeCheckbox from "./components/NukeCheckbox.vue";
-import NukeTextInput from "./components/NukeTextInput.vue";
+import {Color} from "../composables/useColor.ts";
+import {Space} from "../composables/useSize.ts";
+import {watch} from "vue";
 
-const darkModeValue = ref<boolean>(false);
+const props = withDefaults(
+    defineProps<{
+      primaryColor: Color
+      secondaryColor: Color
+      size: Space
+      type: "text" | "email" | "password" | "search"
 
-const inputmodel = ref();
+      placeHolder:string
+      value: string
+    }>(),
+    {
+      size: "16px",
+      primaryColor: "azure",
+      secondaryColor: "gray",
+      type: "text",
+      placeHolder: "Enter Something Nice!"
+
+    }
+)
+
+defineEmits(['update:value'])
 
 
+
+watch(props.value, (newValue) => {
+  emit("update:value", newValue);
+})
 </script>
+<style scoped lang="scss">
 
-<style scoped></style>
+</style>

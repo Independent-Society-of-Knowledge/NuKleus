@@ -30,7 +30,8 @@
 <template>
   <input type="checkbox" v-model="model" class="hidden" :disabled="disabled" />
   <div class="
-    peer-disabled:bg-red-400
+    h-[--nuke-space-primary]
+    w-[--nuke-space-primary]
     group flex items-center justify-center text-white
 
     nuke-color-attribute
@@ -50,10 +51,6 @@
     data-[disabled=true]:data-[checked=false]:dark:bg-[--nuke-color-secondary-900]
     data-[disabled=true]:data-[checked=true]:bg-[--nuke-color-secondary-900]
 
-
-
-    h-[--nuke-space-primary]
-    w-[--nuke-space-primary]
     "
        :nuke-color-primary="primaryColor"
        :nuke-color-secondary="secondaryColor"
