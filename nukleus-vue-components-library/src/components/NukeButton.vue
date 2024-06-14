@@ -25,28 +25,42 @@
 
 <template>
   <button class="
-    nuke-color-compute
-    nuke-space-compute
+    nuke-color-attribute
+    nuke-space-attribute
     px-[--nuke-space-primary]
     pt-[--nuke-space-primary]
     pb-[--nuke-space-secondary]
 
-    "
-          :class="{'nuke-button-normal': type === 'normal', 'nuke-button-bordered': type === 'bordered'}"
-          :nuke-color-primary="primaryColor"
+    [&[type=normal]]:border-0
+    [&[type=normal]]:text-white flex flex-row items-center  transition-all duration-200  gap-[32px] nuke-type-sans-d4-400-normal text-nowrap
+    [&[type=normal]]:bg-[--nuke-color-primary-800]
+    [&[type=normal]]:hover:bg-[--nuke-color-primary-700]
+    [&[type=normal]]:active:bg-[--nuke-color-primary-800]
+    [&[type=normal]]:dark:bg-[--nuke-color-primary-700]
+    [&[type=normal]]:dark:hover:bg-[--nuke-color-primary-600]
+    [&[type=normal]]:dark:active:bg-[--nuke-color-primary-700]
 
+    [&[type=border]]:bg-transparent
+    [&[type=border]]:text-[--nuke-color-primary-800]
+    [&[type=border]]:border-[--nuke-border-width-2px]
+    [&[type=border]]:border-solid
+    [&[type=border]]:border-[--nuke-color-primary-800]
+    [&[type=border]]:hover:border-[--nuke-color-primary-700] [&[type=border]]:hover:text-[--nuke-color-primary-700]
+    [&[type=border]]:active:border-[--nuke-color-primary-800] [&[type=border]]:active:text-[--nuke-color-primary-800]
+    [&[type=border]]:dark:border-[--nuke-color-primary-400] [&[type=border]]:dark:text-[--nuke-color-primary-400]
+    [&[type=border]]:dark:hover:border-[--nuke-color-primary-300] [&[type=border]]:dark:hover:text-[--nuke-color-primary-300]
+    [&[type=border]]:dark:active:border-[--nuke-color-primary-400] [&[type=border]]:dark:active:text-[--nuke-color-primary-400]
+    "
+          :nuke-color-primary="primaryColor"
           :nuke-space-primary="computedButtonSizes.primary"
           :nuke-space-secondary="computedButtonSizes.secondary"
-
-
-  >
+          :type="type">
     <div class="min-w-0">
       <slot name="default"/>
     </div>
     <div class="h-[18px] w-[18px] ">
       <slot name="icon"/>
     </div>
-
   </button>
 </template>
 <script setup lang="ts">
@@ -58,18 +72,18 @@ const props = withDefaults(
     defineProps<{
       primaryColor: Color
       size: Space
-      type: "normal" | "bordered"
+      type: "normal" | "border"
 
     }>(),
     {
-      primaryColor: "gray",
-      size: "regular",
-      type: "normal"
+      primaryColor: "shore",
+      size: "48px",
+      type: "border"
     }
 )
 
 const computedButtonSizes = computed(()=> {
-  if (props.size != "large" || props.size != "large" || props.size != "large")  {
+  if (props.size != "64px" && props.size != "48px" && props.size != "128px" && props.size != "512px")  {
     return {
       primary: props.size,
       secondary: props.size
@@ -77,7 +91,7 @@ const computedButtonSizes = computed(()=> {
   }
   else {
     return {
-      primary: "regular",
+      primary: "16px",
       secondary: props.size
     }
   }
@@ -87,27 +101,4 @@ const computedButtonSizes = computed(()=> {
 
 
 <style scoped>
-.nuke-button-normal{
-  @apply
-  text-white flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans text-nowrap
-  bg-[--nuke-color-primary-800]
-  hover:bg-[--nuke-color-primary-700]
-  active:bg-[--nuke-color-primary-800]
-  dark:bg-[--nuke-color-primary-700]
-  dark:hover:bg-[--nuke-color-primary-600]
-  dark:active:bg-[--nuke-color-primary-700];
-}
-.nuke-button-bordered{
-  @apply
-  text-[--nuke-color-primary-800] flex flex-row  transition-all duration-200  gap-[32px] text-[14px] font-plex-sans
-  px-[16px] border-[2px]
-  border-[--nuke-color-primary-800]
-  hover:border-[--nuke-color-primary-700] hover:text-[--nuke-color-primary-700]
-  active:border-[--nuke-color-primary-800] active:text-[--nuke-color-primary-800]
-
-  dark:border-[--nuke-color-primary-400] dark:text-[--nuke-color-primary-400]
-  dark:hover:border-[--nuke-color-primary-300] dark:hover:text-[--nuke-color-primary-300]
-  dark:active:border-[--nuke-color-primary-400] dark:active:text-[--nuke-color-primary-400];
-}
-
 </style>
