@@ -68,7 +68,6 @@ const props = withDefaults(
       showPercentageOnHover: boolean
 
     }>(), {
-      progressValue: 50,
       size: "4px",
       primaryColor: "azure",
       expectedValue: 100,

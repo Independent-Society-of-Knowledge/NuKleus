@@ -37,8 +37,7 @@
         <nuke-icon-moon width="100%" height="100%" />
       </template>
     </nuke-button>
-
-    <nuke-progress-bar  :progress-value="50"/>
+    <nuke-loading/>
   </div>
 
 
@@ -50,6 +49,7 @@ import {ref} from "vue";
 import NukeButton from "./components/NukeButton.vue";
 import NukeIconMoon from "./components/icon-vue-components/nuke-icon-moon.vue";
 import NukeProgressBar from "./components/NukeProgressBar.vue";
+import NukeLoading from "./components/NukeLoading.vue";
 
 const darkModeValue = ref<boolean>(false);
 

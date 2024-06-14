@@ -76,9 +76,9 @@ const props = withDefaults(
 
     }>(),
     {
-      primaryColor: "shore",
-      size: "48px",
-      type: "border"
+      primaryColor: "azure",
+      size: "16px",
+      type: "normal"
     }
 )
 

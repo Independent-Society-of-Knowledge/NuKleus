@@ -2,50 +2,50 @@
   <div>
     <div class="lds-grid group">
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
       <div
-          class="nuke-color-compute bg-[--primary-600]  group-hover:bg-[--primary-400]
+          class="nuke-color-attribute bg-[--nuke-color-primary-600]  group-hover:bg-[--nuke-color-primary-400]
            nuke-transition-colors
-           group-hover:ease-in-out dark:bg-[--primary-500] dark:group-hover:bg-[--primary-400]"
-          :nuke-primary="color"></div>
+           group-hover:ease-in-out dark:bg-[--nuke-color-primary-500] dark:group-hover:bg-[--nuke-color-primary-400]"
+          :nuke-color-primary="color"></div>
     </div>
   </div>
 </template>
@@ -59,7 +59,7 @@ const props = withDefaults(
 
     }>(),
     {
-      color: "gray"
+      color: "azure"
     }
 )
 
