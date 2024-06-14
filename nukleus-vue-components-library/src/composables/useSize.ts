@@ -23,4 +23,4 @@
 * SPDX-License-Identifier: GPL-2.0-or-later
 */
 
-export type Space = "tiny" | "small" | "smaller" | "regular" | "medium" | "semilarge" | "large" | "larger" | "giant";
+export type Space = "0px" | "2px" | "4px" | "8px" | "16px" | "24px" | "32px" | "48px" | "64px" | "128px" | "512px"
