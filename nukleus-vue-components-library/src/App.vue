@@ -29,15 +29,8 @@
   -->
 
 <template>
-
-  <div :class="{ dark: darkModeValue }" class="h-screen mx-auto p-10 dark:bg-black transition-colors duration-200 flex justify-center items-center">
-
-    <nuke-button @click=" darkModeValue=!darkModeValue"> Dark Mode
-      <template v-slot:icon>
-        <nuke-icon-moon width="100%" height="100%" />
-      </template>
-    </nuke-button>
-    <nuke-loading/>
+  <div :class="{ dark: darkModeValue }" class="h-screen  dark:bg-black transition-colors duration-200">
+    <nuke-checkbox primary-color="azure" v-model="darkModeValue"  :disabled="true"/>
   </div>
 
 
@@ -46,12 +39,10 @@
 <script setup lang="ts">
 
 import {ref} from "vue";
-import NukeButton from "./components/NukeButton.vue";
-import NukeIconMoon from "./components/icon-vue-components/nuke-icon-moon.vue";
-import NukeProgressBar from "./components/NukeProgressBar.vue";
-import NukeLoading from "./components/NukeLoading.vue";
+import NukeCheckbox from "./components/NukeCheckbox.vue";
 
 const darkModeValue = ref<boolean>(false);
+
 
 
 
