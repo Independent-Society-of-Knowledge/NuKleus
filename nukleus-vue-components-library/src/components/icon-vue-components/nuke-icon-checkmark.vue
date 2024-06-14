@@ -1,6 +1,6 @@
 <template>
-  <svg fill="none" height="20"
-       viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+  <svg fill="none"
+       viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <clipPath id="master_svg0_134_08844">
         <rect height="20" rx="0" width="20" x="0" y="0"/>
