@@ -73,9 +73,9 @@
 import {Color} from "../composables/useColor.ts";
 import {Space} from "../composables/useSize.ts";
 import NukeIconCheckmark from "./icon-vue-components/nuke-icon-checkmark.vue";
-import {ref} from "vue";
 
-const model = defineModel(true)
+
+const model = defineModel()
 
 function checkFunction(){
   if (!props.disabled) {
