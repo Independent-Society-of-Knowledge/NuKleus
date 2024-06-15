@@ -28,6 +28,7 @@
   -->
 <template>
   <div class="input-container
+  group
   flex flex-row gap-[16px]
   p-[4px]
   nuke-space-attribute
@@ -55,7 +56,9 @@
   :nuke-color-secondary="secondaryColor"
   :nuke-space-primary="size"
 >
-    <div class="left-icon w-auto min-w-0 h-full">
+    <div class="left-icon
+    transition-all duration-200 w-auto h-full text-[--nuke-color-secondary-400]
+    hover:text-[--nuke-color-secondary-500] group-focus-within:text-[--nuke-color-primary-600]">
       <slot name="left-icon"/>
     </div>
     <input :type="type" :placeholder="placeHolder" v-model="model"
@@ -65,18 +68,20 @@
            p-0
            nuke-space-attribute
            bg-[--nuke-secondary-100]
-           nuke-type-sans-d4-400-normal text-[--nuke-color-secondary-900]
+           nuke-type-sans-d4-500-normal text-[--nuke-color-secondary-900]
            placeholder-[--nuke-color-secondary-400] placeholder:hover:text-[--nuke-color-secondary-500]
            placeholder:nuke-type-sans-d4-200-normal
            placeholder:select-none
 
            dark:bg-[--nuke-color-secondary-900]
-           nuke-type-sans-d4-400-normal dark:text-[--nuke-color-secondary-100]
-           placeholder-[--nuke-color-secondary-400]
+           dark:text-[--nuke-color-secondary-100]
 
     "/>
-    <div class="left-icon w-auto h-full">
-      <slot name="left-icon"/>
+    <div class="
+    right-icon
+    transition-all duration-200 w-auto h-full text-[--nuke-color-secondary-400]
+    hover:text-[--nuke-color-secondary-500] group-focus-within:text-[--nuke-color-primary-600]">
+      <slot name="right-icon"/>
     </div>
 </div>
 </template>
