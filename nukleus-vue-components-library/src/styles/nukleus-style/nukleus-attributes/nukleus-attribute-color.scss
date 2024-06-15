@@ -27,20 +27,24 @@ $colors: "azure", "shore", "ocean", "gray", "danger", "warning", "success", "inf
 $shades: "100", "200", "300", "400", "500", "600", "700", "800", "900", "1000";
 .nuke-color-attribute {
   @each $color in $colors {
-    @each $shade in $shades {
       &[nuke-color-primary=#{$color}] {
+        @each $shade in $shades {
         --nuke-color-primary-#{$shade}: var(--#{$color}-#{$shade});
+        }
       }
 
       &[nuke-color-secondary=#{$color}] {
+        @each $shade in $shades {
         --nuke-color-secondary-#{$shade}: var(--#{$color}-#{$shade});
+        }
       }
 
       &[nuke-color-teritary=#{$color}] {
+        @each $shade in $shades {
         --nuke-color-tertiary-#{$shade}: var(--#{$color}-#{$shade});
+        }
       }
-
     }
   }
-}
+
 
