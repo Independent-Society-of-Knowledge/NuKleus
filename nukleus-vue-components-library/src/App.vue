@@ -29,13 +29,14 @@
   -->
 
 <template>
-  <div :class="{ dark: darkModeValue }" class="h-screen  dark:bg-black transition-colors duration-200 flex flex-col items-center justify-center dark:text-white bg-white">
+  <div :class="{ dark: darkModeValue }" class="h-screen  dark:bg-black transition-colors duration-200 flex flex-col gap-14 p-[48px] items-center justify-center dark:text-white bg-white">
     <nuke-checkbox primary-color="azure" v-model="darkModeValue" :disabled="false"/>
-    <nuke-text-input :value="inputmodel" @update:value="(newvalue)=>{
-      inputmodel.value = newvalue
-    }"/>
 
-    {{inputmodel}}
+    <nuke-progress-bar progress-value="29" size="16px" :show-percentage-on-hover="true"/>
+    <nuke-text-input :model-value="inputModel" @model-value="(newValue) => {
+      inputModel = newValue
+    }"/>
+    {{inputModel}}
   </div>
 
 
@@ -46,11 +47,10 @@
 import {ref} from "vue";
 import NukeCheckbox from "./components/NukeCheckbox.vue";
 import NukeTextInput from "./components/NukeTextInput.vue";
+import NukeProgressBar from "./components/NukeProgressBar.vue";
 
 const darkModeValue = ref<boolean>(false);
-
-const inputmodel = ref();
-
+const inputModel = ref()
 
 </script>
 

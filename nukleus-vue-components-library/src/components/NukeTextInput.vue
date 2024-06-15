@@ -27,12 +27,57 @@
   -
   -->
 <template>
-<div class="input-container bg-red-400"
+  <div class="input-container
+  flex flex-row gap-[16px]
+  p-[4px]
+  nuke-space-attribute
+  nuke-color-attribute
+  transition-all
+  border-solid
+  border-[2px]
+  h-[--nuke-space-primary] w-full
+
+  border-[--nuke-color-secondary-200]
+  hover:border-[--nuke-color-secondary-300]
+  focus-within:border-solid
+  focus-within:border-[--nuke-color-primary-600]
+  focus-within:hover:border-[--nuke-color-primary-600]
+  bg-[--nuke-color-secondary-100]
+
+  dark:bg-[--nuke-color-secondary-900]
+  dark:border-[--nuke-color-secondary-800]
+  dark:hover:border-[--nuke-color-secondary-700]
+  dark:focus-within:border-solid
+  dark:focus-within:border-[--nuke-color-primary-600]
+  dark:focus-within:hover:border-[--nuke-color-primary-600]
+"
   :nuke-color-primary="primaryColor"
   :nuke-color-secondary="secondaryColor"
   :nuke-space-primary="size"
 >
-<input :type="type" :placeholder="placeHolder" v-bind="value"/>
+    <div class="left-icon w-auto min-w-0 h-full">
+      <slot name="left-icon"/>
+    </div>
+    <input :type="type" :placeholder="placeHolder" v-model="model"
+           class="
+           transition-all
+           h-full w-full border-0 outline-0 box-border
+           p-0
+           nuke-space-attribute
+           bg-[--nuke-secondary-100]
+           nuke-type-sans-d4-400-normal text-[--nuke-color-secondary-900]
+           placeholder-[--nuke-color-secondary-400] placeholder:hover:text-[--nuke-color-secondary-500]
+           placeholder:nuke-type-sans-d4-200-normal
+           placeholder:select-none
+
+           dark:bg-[--nuke-color-secondary-900]
+           nuke-type-sans-d4-400-normal dark:text-[--nuke-color-secondary-100]
+           placeholder-[--nuke-color-secondary-400]
+
+    "/>
+    <div class="left-icon w-auto h-full">
+      <slot name="left-icon"/>
+    </div>
 </div>
 </template>
 <script setup lang="ts">
@@ -47,12 +92,10 @@ const props = withDefaults(
       secondaryColor: Color
       size: Space
       type: "text" | "email" | "password" | "search"
-
       placeHolder:string
-      value: string
     }>(),
     {
-      size: "16px",
+      size: "24px",
       primaryColor: "azure",
       secondaryColor: "gray",
       type: "text",
@@ -61,13 +104,14 @@ const props = withDefaults(
     }
 )
 
-defineEmits(['update:value'])
+const model = defineModel()
+const emit = defineEmits(['modelValue'])
 
-
-
-watch(props.value, (newValue) => {
-  emit("update:value", newValue);
+watch(model, (newValue) => {
+  emit("modelValue", newValue)
 })
+
+
 </script>
 <style scoped lang="scss">
 

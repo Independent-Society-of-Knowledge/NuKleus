@@ -30,7 +30,7 @@
     "
          :nuke-color-primary="computedPrimaryColor"
          :style="{
-        width: props.state !== 'danger' ? `${props.progressValue < props.expectedValue ? (props.progressValue / props.expectedValue)*100 : 100}%` : '100%',
+        width: props.state !== 'danger' ? `${props.progressValue < props.expectedValue ? ((props.progressValue / props.expectedValue)*100).toFixed(2) : 100}%` : '100%',
         transition: 'width 0.2s ease-in-out'
          }"
     ></div>
@@ -81,7 +81,7 @@ const props = withDefaults(
 const percentageOnHover = ref(false)
 
 const percentage = computed(() => {
-  return props.state !== "danger" ? `${props.progressValue < props.expectedValue ? (props.progressValue / props.expectedValue) * 100 : 100}%` : "100%"
+  return props.state !== "danger" ? `${props.progressValue < props.expectedValue ? ((props.progressValue / props.expectedValue) * 100).toFixed(0) : 100}%` : "100%"
 })
 
 const computedPrimaryColor = computed(() => {
