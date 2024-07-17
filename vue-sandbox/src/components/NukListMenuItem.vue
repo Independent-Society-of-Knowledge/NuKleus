@@ -5,6 +5,7 @@
   group
   nuk-coloring
   flex flex-row
+  h-fit
   items-center
   nuk-transition-all-fast-02-standard-productive
   w-full

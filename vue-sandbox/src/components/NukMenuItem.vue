@@ -3,6 +3,7 @@
   <div class="
   group
   nuk-coloring
+  h-fit
   flex flex-row
   items-center
   nuk-transition-all-fast-02-standard-productive
