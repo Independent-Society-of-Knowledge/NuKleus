@@ -1,0 +1,100 @@
+// Nukleus: A design system for knowledge (vue-components-library)
+//
+// Copyright © 2024 Independent Society of Knowledge
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see <https://www.gnu.org/licenses/>.
+//
+// Contact Information:
+// Independent Society of Knowledge
+// Email: projects@iskportal.com
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+// Email:        ceo@iskportal.com
+// version 1.0.0
+
+$durations: "fast-01", "fast-02", "moderate-01", "moderate-02", "slow-01", "slow-02";
+$transition: "all", "background", "border", "color";
+$easing: "entrance", "standard", "exiting";
+$modes: "expressive", "productive";
+$transition-properties: all, opacity, background-color, background, width, height, color;
+
+
+
+.nuk-transition-background-color {
+  transition-property: background-color;
+  -moz-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+}
+
+.nuk-transition-opacity{
+  transition-property: opacity;
+  -moz-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+}
+
+.nuk-transition-font-color {
+  transition-property: color;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+}
+
+.nuk-transition-all {
+  transition-property: all;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+}
+
+.nuk-transition-width{
+  transition-property: width;
+  -moz-transition-property: width;
+  -webkit-transition-property: width;
+  -o-transition-property: width;
+}
+@each $duration in $durations {
+  .nuk-duration-#{$duration} {
+    transition-duration: var(--nuk-duration-#{$duration});
+  }
+}
+
+@each $ease in $easing {
+  @each $mode in $modes {
+    .nuk-#{$ease}-#{$mode} {
+      transition-timing-function: var(--nuk-#{$ease}-#{$mode}-ease)
+    }
+  }
+}
+
+@each $transition-property in $transition-properties {
+  .nuk-transition-#{$transition-property} {
+    transition-property: $transition-property;
+  }
+}
+
+@each $duration in $durations {
+  @each $transition-property in $transition-properties {
+    @each $ease in $easing{
+      @each $mode in $modes {
+        .nuk-transition-#{$transition-property}-#{$duration}-#{$ease}-#{$mode} {
+          transition-property: $transition-property;
+          transition-duration: var(--nuk-duration-#{$duration});
+          transition-timing-function: var(--nuk-#{$ease}-#{$mode}-ease);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+// Nukleus: A design system for knowledge (vue-components-library)
+//
+// Copyright © 2024 Independent Society of Knowledge
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see <https://www.gnu.org/licenses/>.
+//
+// Contact Information:
+// Independent Society of Knowledge
+// Email: projects@iskportal.com
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+// Email:        ceo@iskportal.com
+// version 1.0.0
+
+:root {
+
+  // Colors 
+  // --- Azure Pallet
+  --nuk-azure-10: #f6f2ff;
+  --nuk-azure-20: #e8daff;
+  --nuk-azure-30: #d4bbff;
+  --nuk-azure-40: #be95ff;
+  --nuk-azure-50: #a56eff;
+  --nuk-azure-60: #8a3ffc;
+  --nuk-azure-70: #6929c4;
+  --nuk-azure-80: #491d8b;
+  --nuk-azure-90: #31135e;
+  --nuk-azure-100: #1c0f30;
+
+  // --- Ocean Pallet
+  --nuk-ocean-10: #edf5ff;
+  --nuk-ocean-20: #d0e2ff;
+  --nuk-ocean-30: #a6c8ff;
+  --nuk-ocean-40: #78a9ff;
+  --nuk-ocean-50: #4589ff;
+  --nuk-ocean-60: #0f62fe;
+  --nuk-ocean-70: #0043ce;
+  --nuk-ocean-80: #002d9c;
+  --nuk-ocean-90: #001d6c;
+  --nuk-ocean-100: #001141;
+
+  // --- Shore Pallet
+  --nuk-shore-10: #d9fbfb;
+  --nuk-shore-20: #9ef0f0;
+  --nuk-shore-30: #3ddbd9;
+  --nuk-shore-40: #08bdba;
+  --nuk-shore-50: #009d9a;
+  --nuk-shore-60: #007d79;
+  --nuk-shore-70: #005d5d;
+  --nuk-shore-80: #004144;
+  --nuk-shore-90: #022b30;
+  --nuk-shore-100: #081a1c;
+
+  // --- Gray Pallet
+  --nuk-gray-5: #fafafa;
+  --nuk-gray-10: #f4f4f4;
+  --nuk-gray-20: #e0e0e0;
+  --nuk-gray-30: #c6c6c6;
+  --nuk-gray-40: #a8a8a8;
+  --nuk-gray-50: #8d8d8d;
+  --nuk-gray-60: #525252;
+  --nuk-gray-70: #393939;
+  --nuk-gray-80: #262626;
+  --nuk-gray-90: #161616;
+  --nuk-gray-100: #090909;
+  --nuk-black: #000000;
+  --nuk-white: #ffffff;
+
+  // --- Warning Pallet
+  --nuk-warning-10: #fcf4d6;
+  --nuk-warning-20: #fddc69;
+  --nuk-warning-30: #f1c21b;
+  --nuk-warning-40: #d2a106;
+  --nuk-warning-50: #b28600;
+  --nuk-warning-60: #8e6a00;
+  --nuk-warning-70: #684e00;
+  --nuk-warning-80: #483700;
+  --nuk-warning-90: #302400;
+  --nuk-warning-100: #1c1500;
+
+  // --- Danger Pallet
+  --nuk-danger-10: #fff1f1;
+  --nuk-danger-20: #ffd7d9;
+  --nuk-danger-30: #ffb3b8;
+  --nuk-danger-40: #ff8389;
+  --nuk-danger-50: #fa4d56;
+  --nuk-danger-60: #da1e28;
+  --nuk-danger-70: #a2191f;
+  --nuk-danger-80: #750e13;
+  --nuk-danger-90: #520408;
+  --nuk-danger-100: #2d0709;
+
+  // --- Success Pallet
+  --nuk-success-10: #defbe6;
+  --nuk-success-20: #a7f0ba;
+  --nuk-success-30: #6fdc8c;
+  --nuk-success-40: #42be65;
+  --nuk-success-50: #24a148;
+  --nuk-success-60: #198038;
+  --nuk-success-70: #0e6027;
+  --nuk-success-80: #044317;
+  --nuk-success-90: #022d0d;
+  --nuk-success-100: #071908;
+
+  // Spacing
+  --nuk-0px: 0px;
+  --nuk-1px: 1px;
+  --nuk-2px: 2px;
+  --nuk-4px: 4px;
+  --nuk-6px: 6px;
+  --nuk-8px: 8px;
+  --nuk-12px: 12px;
+  --nuk-16px: 16px;
+  --nuk-24px: 24px;
+  --nuk-32px: 32px;
+  --nuk-48px: 48px;
+  --nuk-64px: 64px;
+  --nuk-96px: 96px;
+  --nuk-128px: 128px;
+
+  // Breakpoint
+  --nuk-xs: 0px;
+  --nuk-sm: 320px;
+  --nuk-md: 672px;
+  --nuk-lg: 1056px;
+  --nuk-xl: 1312px;
+  --nuk-mx: 1584px;
+
+  // Animation
+  // --- Easing
+  --nuk-standard-productive-easing: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --nuk-entrance-productive-easing: cubic-bezier(0, 0, 0.38, 0.9);
+  --nuk-exiting-productive-easing: cubic-bezier(0.2, 0, 1, 0.9);
+
+  --nuk-standard-expressive-easing: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --nuk-entrance-expressive-easing: cubic-bezier(0, 0, 0.3, 1);
+  --nuk-exiting-expressive-easing: cubic-bezier(0.2, 0, 1, 0.9);
+
+  // --- Duration
+  --nuk-duration-fast-01: 70ms;
+  --nuk-duration-fast-02: 110ms;
+  --nuk-duration-moderate-01: 150ms;
+  --nuk-duration-moderate-02: 240ms;
+  --nuk-duration-slow-01: 400ms;
+  --nuk-duration-slow-02: 700ms;
+
+}
