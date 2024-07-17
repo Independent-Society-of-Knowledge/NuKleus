@@ -1,0 +1,133 @@
+:root {
+
+  // Colors 
+  // --- Azure Pallet
+  --nuke-azure-10: #f6f2ff;
+  --nuke-azure-20: #e8daff;
+  --nuke-azure-30: #d4bbff;
+  --nuke-azure-40: #be95ff;
+  --nuke-azure-50: #a56eff;
+  --nuke-azure-60: #8a3ffc;
+  --nuke-azure-70: #6929c4;
+  --nuke-azure-80: #491d8b;
+  --nuke-azure-90: #31135e;
+  --nuke-azure-100: #1c0f30;
+
+  // --- Ocean Pallet
+  --nuke-ocean-10: #edf5ff;
+  --nuke-ocean-20: #d0e2ff;
+  --nuke-ocean-30: #a6c8ff;
+  --nuke-ocean-40: #78a9ff;
+  --nuke-ocean-50: #4589ff;
+  --nuke-ocean-60: #0f62fe;
+  --nuke-ocean-70: #0043ce;
+  --nuke-ocean-80: #002d9c;
+  --nuke-ocean-90: #001d6c;
+  --nuke-ocean-100: #001141;
+
+  // --- Shore Pallet
+  --nuke-shore-10: #d9fbfb;
+  --nuke-shore-20: #9ef0f0;
+  --nuke-shore-30: #3ddbd9;
+  --nuke-shore-40: #08bdba;
+  --nuke-shore-50: #009d9a;
+  --nuke-shore-60: #007d79;
+  --nuke-shore-70: #005d5d;
+  --nuke-shore-80: #004144;
+  --nuke-shore-90: #022b30;
+  --nuke-shore-100: #081a1c;
+
+  // --- Gray Pallet
+  --nuke-gray-5: #fafafa;
+  --nuke-gray-10: #f4f4f4;
+  --nuke-gray-20: #e0e0e0;
+  --nuke-gray-30: #c6c6c6;
+  --nuke-gray-40: #a8a8a8;
+  --nuke-gray-50: #8d8d8d;
+  --nuke-gray-60: #525252;
+  --nuke-gray-70: #393939;
+  --nuke-gray-80: #262626;
+  --nuke-gray-90: #161616;
+  --nuke-gray-100: #090909;
+
+
+  // --- Warning Pallet
+  --nuke-warning-10: #fcf4d6;
+  --nuke-warning-20: #fddc69;
+  --nuke-warning-30: #f1c21b;
+  --nuke-warning-40: #d2a106;
+  --nuke-warning-50: #b28600;
+  --nuke-warning-60: #8e6a00;
+  --nuke-warning-70: #684e00;
+  --nuke-warning-80: #483700;
+  --nuke-warning-90: #302400;
+  --nuke-warning-100: #1c1500;
+
+  // --- Danger Pallet
+  --nuke-danger-10: #fff1f1;
+  --nuke-danger-20: #ffd7d9;
+  --nuke-danger-30: #ffb3b8;
+  --nuke-danger-40: #ff8389;
+  --nuke-danger-50: #fa4d56;
+  --nuke-danger-60: #da1e28;
+  --nuke-danger-70: #a2191f;
+  --nuke-danger-80: #750e13;
+  --nuke-danger-90: #520408;
+  --nuke-danger-100: #2d0709;
+
+  // --- Success Pallet
+  --nuke-success-10: #defbe6;
+  --nuke-success-20: #a7f0ba;
+  --nuke-success-30: #6fdc8c;
+  --nuke-success-40: #42be65;
+  --nuke-success-50: #24a148;
+  --nuke-success-60: #198038;
+  --nuke-success-70: #0e6027;
+  --nuke-success-80: #044317;
+  --nuke-success-90: #022d0d;
+  --nuke-success-100: #071908;
+
+  // Spacing
+  --nuke-0px: 0px;
+  --nuke-1px: 1px;
+  --nuke-2px: 2px;
+  --nuke-4px: 4px;
+  --nuke-6px: 6px;
+  --nuke-8px: 8px;
+  --nuke-12px: 12px;
+  --nuke-16px: 16px;
+  --nuke-24px: 24px;
+  --nuke-32px: 32px;
+  --nuke-48px: 48px;
+  --nuke-64px: 64px;
+  --nuke-96px: 96px;
+  --nuke-128px: 128px;
+
+  // Breakpoint
+  --nuke-xs: 0px;
+  --nuke-sm: 320px;
+  --nuke-md: 672px;
+  --nuke-lg: 1056px;
+  --nuke-xl: 1312px;
+  --nuke-mx: 1584px;
+
+  // Animation
+  // --- Easing
+  --nuke-standard-productive-easing: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --nuke-entrance-productive-easing: cubic-bezier(0, 0, 0.38, 0.9);
+  --nuke-exiting-productive-easing: cubic-bezier(0.2, 0, 1, 0.9);
+
+  --nuke-standard-expressive-easing: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --nuke-entrance-expressive-easing: cubic-bezier(0, 0, 0.3, 1);
+  --nuke-exiting-expressice-easing: cubic-bezier(0.2, 0, 1, 0.9);
+
+  // --- Duration
+  --nuke-duration-fast-01: 70ms;
+  --nuke-duration-fast-02: 110ms;
+  --nuke-duration-moderate-01: 150ms;
+  --nuke-duration-moderate-02: 240ms;
+  --nuke-duration-slow-01: 400ms;
+  --nuke-duration-slow-02: 700ms;
+
+
+}
