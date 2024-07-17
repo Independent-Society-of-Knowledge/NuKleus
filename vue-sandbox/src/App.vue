@@ -17,13 +17,11 @@
       Toggle Dark/Light
     </nuk-button>
   </div>
-  <div class="bg-white dark:bg-black flex float-start flex-col gap-4px w-screen h-screen p-[100px]" :class="{ dark: darkMode }">
-    <nuk-menu-item :color="computedColor">Home</nuk-menu-item>
-    <nuk-menu-item :color="computedColor">About us</nuk-menu-item>
-    <nuk-menu-item :color="computedColor">A Simple menu item</nuk-menu-item>
-    <nuk-menu-item :color="computedColor">Another Menu Item to look</nuk-menu-item>
-    <nuk-menu-item :color="computedColor">Hi</nuk-menu-item>
-    <nuk-menu-item :color="computedColor">How are you?</nuk-menu-item>
+  <div class="bg-white dark:bg-black flex float-start flex-col gap-4px  w-screen h-screen p-[100px]" :class="{ dark: darkMode }">
+      <nuk-accordin header="Accordin Test">
+        Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum
+
+      </nuk-accordin>
   </div>
 </template>
 <script setup lang="ts">
@@ -34,6 +32,8 @@ import NukBreadcrumb from "@/components/NukBreadcrumb.vue";
 import NukLoading from "@/components/NukLoading.vue";
 import NukInput from "@/components/NukInput.vue";
 import NukMenuItem from "@/components/NukMenuItem.vue";
+import NukListMenuItem from "@/components/NukListMenuItem.vue";
+import NukAccordin from "@/components/NukAccordin.vue";
 const colorRef = ref(1)
 
 
