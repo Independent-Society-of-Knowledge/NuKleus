@@ -13,7 +13,11 @@
   flex-start
   
   p-16px
-  text-white
+  dark:text-white
+  text-black
+  hover:text-white
+  active:text-white
+
   nuk-text-body-01
   [&[nuk-color-primary='gray]]:text-black
   dark:[&[nuk-color-primary='gray']]:text-white
